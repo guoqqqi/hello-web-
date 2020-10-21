@@ -13,4 +13,4 @@ Blog.getInitialProps = async () => {
     return{};
 };
 
-export default (Blog);
+export default Blog;

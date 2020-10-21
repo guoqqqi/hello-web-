@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./Blog\";","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/views/Blog/index.ts"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,QAAtB","sourcesContent":["export {default} from \"./Blog\"\n"]},"metadata":{},"sourceType":"module"}
