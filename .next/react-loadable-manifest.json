@@ -1,4 +1,16 @@
 {
+  "./blog/en-US/diary.md": [
+    {
+      "id": "./_posts/blog/en-US/diary.md",
+      "file": "static/chunks/1.js"
+    }
+  ],
+  "./blog/zh-CN/diary.md": [
+    {
+      "id": "./_posts/blog/zh-CN/diary.md",
+      "file": "static/chunks/2.js"
+    }
+  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",
