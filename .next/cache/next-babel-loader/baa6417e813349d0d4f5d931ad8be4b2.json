@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from '../../../../views/Post/index';","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/pages/post/[category]/[sulg]/index.js"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,8BAAtB","sourcesContent":["export {default} from '../../../../views/Post/index'\n"]},"metadata":{},"sourceType":"module"}
