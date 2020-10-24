@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./Boil\";","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/component/BoilingVerdict/index.ts"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,QAAtB","sourcesContent":["export {default} from \"./Boil\";\n"]},"metadata":{},"sourceType":"module"}
