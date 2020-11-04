@@ -23,6 +23,10 @@ const BlogList: NextPage<Props, any> = () => {
       <Link href="/post/blog/diary">
         <button>Look</button>
       </Link>
+      <p>My learn web travel</p>
+      <Link href="/post/blog/learn-web">
+        <button>Go</button>
+      </Link>
     </>
   );
 };
