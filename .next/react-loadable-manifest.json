@@ -1,28 +1,4 @@
 {
-  "./blog/en-US/diary.md": [
-    {
-      "id": "./_posts/blog/en-US/diary.md",
-      "file": "static/chunks/1.js"
-    }
-  ],
-  "./blog/en-US/learn-web.md": [
-    {
-      "id": "./_posts/blog/en-US/learn-web.md",
-      "file": "static/chunks/2.js"
-    }
-  ],
-  "./blog/zh-CN/diary.md": [
-    {
-      "id": "./_posts/blog/zh-CN/diary.md",
-      "file": "static/chunks/3.js"
-    }
-  ],
-  "./blog/zh-CN/learn-web.md": [
-    {
-      "id": "./_posts/blog/zh-CN/learn-web.md",
-      "file": "static/chunks/4.js"
-    }
-  ],
   "./dev/noop": [
     {
       "id": "./node_modules/next/dist/client/dev/noop.js",
