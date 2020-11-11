@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Boil = styled.div`
+export const Ca = styled.div`
   width: 100%;
   height: auto;
   margin: 5%;

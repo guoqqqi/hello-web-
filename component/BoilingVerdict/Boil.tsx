@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NextPage } from "next";
-import { loadGetInitialProps } from "next/dist/next-server/lib/utils";
 
 type Props = {};
 

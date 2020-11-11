@@ -3,6 +3,7 @@ import { NextPage } from "next";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import gfm from 'remark-gfm';
 
 type Props = {
   content: string;
@@ -35,8 +36,9 @@ const Page: NextPage<Props, any> = ({ content, data = {} }) => {
             </span>
             <article>
               <ReactMarkdown
-                escapeHtml={true}
+                escapeHtml={false}
                 source={content}
+                plugins={[gfm]}
                 renderers={{ code: CodeBlock }}
               />
             </article>
