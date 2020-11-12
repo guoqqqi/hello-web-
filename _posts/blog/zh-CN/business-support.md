@@ -1,20 +1,6 @@
-<!--
-#
-# Please make sure to install and use the plugin (remark-gfm, which adds support for strikethrough, tables, tasklists and URLs directly):
-#
-#     const React = require('react')
-#     const ReactMarkdown = require('react-markdown')
-#     const render = require('react-dom').render
-#     const gfm = require('remark-gfm')
-#    
-#     const markdown = `Just a link: https://reactjs.com.`
-#    
-#     render(<ReactMarkdown plugins={[gfm]} children={markdown} />, document.body)
-#
--->
 ---
-title: ""
-date: 2020-11-11 18:13:00
+title: "Business Support"
+date: 2020-10-21 22:34:00
 ---
 # 商业支持  
 

@@ -1,26 +1,12 @@
-<!--
-#
-# Please make sure to install and use the plugin (remark-gfm, which adds support for strikethrough, tables, tasklists and URLs directly):
-#
-#     const React = require('react')
-#     const ReactMarkdown = require('react-markdown')
-#     const render = require('react-dom').render
-#     const gfm = require('remark-gfm')
-#    
-#     const markdown = `Just a link: https://reactjs.com.`
-#    
-#     render(<ReactMarkdown plugins={[gfm]} children={markdown} />, document.body)
-#
--->
 ---
-title: ""
+title: "Apache APISIX vs API7"
 date: 2020-11-11 18:13:00
----
+---  
 # Apache APISIX 和 API7 的比较
 
 | **Apache APISIX** | **API7商业产品** |
 | :----: | :----: |
-| 四层和七层反向代理、负载均衡 | **包含 Apache APISIX 所有功能，并增加了：**|
+| 四层和七层反向代理、负载均衡 | **包含 Apache APISIX 所有功能，并增加了：** |
 | 动态限流限速和集群限速 | 用户管理 |
 | 动态路由 | 权限控制 |
 | 动态上游 | 多工作区 |
