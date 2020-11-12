@@ -1,6 +1,6 @@
 ---
-title: "Apache APISIX vs API7"
-date: 2020-11-11 18:13:00
+title: "Apache APISIX 和 API7 的比较"
+date: 2020-11-12 18:18:00
 ---  
 # Apache APISIX 和 API7 的比较
 

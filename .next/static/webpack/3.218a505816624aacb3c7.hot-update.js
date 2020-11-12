@@ -1,0 +1,15 @@
+webpackHotUpdate_N_E(3,{
+
+/***/ "./_posts/blog/zh-CN/apisix-vs-api7.md":
+/*!*********************************************!*\
+  !*** ./_posts/blog/zh-CN/apisix-vs-api7.md ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"---\\ntitle: \\\"Apache APISIX 和 API7 的比较\\\"\\ndate: 2020-11-12 18:18:00\\n---  \\n# Apache APISIX 和 API7 的比较\\n\\n| **Apache APISIX** | **API7商业产品** |\\n| :----: | :----: |\\n| 四层和七层反向代理、负载均衡 | **包含 Apache APISIX 所有功能，并增加了：** |\\n| 动态限流限速和集群限速 | 用户管理 |\\n| 动态路由 | 权限控制 |\\n| 动态上游 | 多工作区 |\\n| 动态SSL证书 | 审计日志 |\\n| 流量复制 | 统计报表 |\\n| 主动和被动健康检查 | 灰度发布 |\\n| 精细化路由 | 更友好的 dashboard |\\n| 支持 ARM64 | SSL 证书管理 |\\n| 支持 key-auth, JWT, basic-auth，IdP | 企业级安全 |\\n| 故障注入 | 更多付费插件 |\\n| 更多功能可参考：[点击查看](https://github.com/apache/apisix/blob/master/README_CN.md#%E5%8A%9F%E8%83%BD) | [基于 SLA 的商业支持](https://www.apiseven.com/support-for-business) |\\n| [现在下载](https://github.com/apache/apisix) | [申请演示](https://apiseven.mikecrm.com/pvdVjd5) |\\n\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vX3Bvc3RzL2Jsb2cvemgtQ04vYXBpc2l4LXZzLWFwaTcubWQ/M2YwNSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtBQUFlLHN3QkFBdXNCIiwiZmlsZSI6Ii4vX3Bvc3RzL2Jsb2cvemgtQ04vYXBpc2l4LXZzLWFwaTcubWQuanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBcIi0tLVxcbnRpdGxlOiBcXFwiQXBhY2hlIEFQSVNJWCDlkowgQVBJNyDnmoTmr5TovoNcXFwiXFxuZGF0ZTogMjAyMC0xMS0xMiAxODoxODowMFxcbi0tLSAgXFxuIyBBcGFjaGUgQVBJU0lYIOWSjCBBUEk3IOeahOavlOi+g1xcblxcbnwgKipBcGFjaGUgQVBJU0lYKiogfCAqKkFQSTfllYbkuJrkuqflk4EqKiB8XFxufCA6LS0tLTogfCA6LS0tLTogfFxcbnwg5Zub5bGC5ZKM5LiD5bGC5Y+N5ZCR5Luj55CG44CB6LSf6L295Z2H6KGhIHwgKirljIXlkKsgQXBhY2hlIEFQSVNJWCDmiYDmnInlip/og73vvIzlubblop7liqDkuobvvJoqKiB8XFxufCDliqjmgIHpmZDmtYHpmZDpgJ/lkozpm4bnvqTpmZDpgJ8gfCDnlKjmiLfnrqHnkIYgfFxcbnwg5Yqo5oCB6Lev55SxIHwg5p2D6ZmQ5o6n5Yi2IHxcXG58IOWKqOaAgeS4iua4uCB8IOWkmuW3peS9nOWMuiB8XFxufCDliqjmgIFTU0zor4HkuaYgfCDlrqHorqHml6Xlv5cgfFxcbnwg5rWB6YeP5aSN5Yi2IHwg57uf6K6h5oql6KGoIHxcXG58IOS4u+WKqOWSjOiiq+WKqOWBpeW6t+ajgOafpSB8IOeBsOW6puWPkeW4gyB8XFxufCDnsr7nu4bljJbot6/nlLEgfCDmm7Tlj4vlpb3nmoQgZGFzaGJvYXJkIHxcXG58IOaUr+aMgSBBUk02NCB8IFNTTCDor4HkuabnrqHnkIYgfFxcbnwg5pSv5oyBIGtleS1hdXRoLCBKV1QsIGJhc2ljLWF1dGjvvIxJZFAgfCDkvIHkuJrnuqflronlhaggfFxcbnwg5pWF6Zqc5rOo5YWlIHwg5pu05aSa5LuY6LS55o+S5Lu2IHxcXG58IOabtOWkmuWKn+iDveWPr+WPguiAg++8mlvngrnlh7vmn6XnnItdKGh0dHBzOi8vZ2l0aHViLmNvbS9hcGFjaGUvYXBpc2l4L2Jsb2IvbWFzdGVyL1JFQURNRV9DTi5tZCMlRTUlOEElOUYlRTglODMlQkQpIHwgW+WfuuS6jiBTTEEg55qE5ZWG5Lia5pSv5oyBXShodHRwczovL3d3dy5hcGlzZXZlbi5jb20vc3VwcG9ydC1mb3ItYnVzaW5lc3MpIHxcXG58IFvnjrDlnKjkuIvovb1dKGh0dHBzOi8vZ2l0aHViLmNvbS9hcGFjaGUvYXBpc2l4KSB8IFvnlLPor7fmvJTnpLpdKGh0dHBzOi8vYXBpc2V2ZW4ubWlrZWNybS5jb20vcHZkVmpkNSkgfFxcblwiOyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./_posts/blog/zh-CN/apisix-vs-api7.md\n");
+
+/***/ })
+
+})

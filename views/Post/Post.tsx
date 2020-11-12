@@ -36,7 +36,7 @@ const Page: NextPage<Props, any> = ({ content, data = {} }) => {
             </span>
             <article>
               <ReactMarkdown
-                escapeHtml={false}
+                escapeHtml={true}
                 source={content}
                 plugins={[gfm]}
                 renderers={{ code: CodeBlock }}

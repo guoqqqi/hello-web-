@@ -31,9 +31,6 @@ const BlogList: NextPage<Props, any> = () => {
       <Link href="/post/blog/form-api7-trial">
         <button>Go form-api7-trial</button>
       </Link>
-      <Link href="/post/blog/business-support">
-        <button>Go form-api7-trial</button>
-      </Link>
       </SDetail>
       <br />
       <div>
