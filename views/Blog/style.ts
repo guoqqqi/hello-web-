@@ -18,6 +18,7 @@ export const SDetail = styled.div`
   font-weight: 150;
   text-align: center;
   z-index: 8;
+  display: inline-block;
 
   .canvasWrap {
     display: inline-block;
