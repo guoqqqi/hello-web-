@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./Canvas\";","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/component/Canvas/index.ts"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,UAAtB","sourcesContent":["export {default} from \"./Canvas\";\n"]},"metadata":{},"sourceType":"module"}

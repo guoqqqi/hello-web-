@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./Background\";","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/component/Background/index.ts"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,cAAtB","sourcesContent":["export {default} from \"./Background\"\n"]},"metadata":{},"sourceType":"module"}
