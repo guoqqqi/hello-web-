@@ -12,6 +12,7 @@ export const SSection = styled.section`
 `;
 
 export const SDetail = styled.div`
+  color: gray;
   width: 100%;
   height: auto;
   margin: 0 auto;

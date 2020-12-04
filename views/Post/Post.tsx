@@ -22,6 +22,9 @@ const CodeBlock = ({ language, value }) => {
 };
 
 const Page: NextPage<Props, any> = ({ content, data = {} }) => {
+  const url = window.location.href;
+  const loc = url.substring(url.lastIndexOf('/')+1, url.length);
+  console.log(url)
   return (
     <>
       <div>This is my article !</div>

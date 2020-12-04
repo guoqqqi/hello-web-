@@ -1,18 +1,27 @@
 import { NextPage } from "next";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 
-import App from "../../../component/Background";
 import { SDetail, SSection } from "../style";
 
 type Props = {};
 
-const BlogList: NextPage<Props, any> = ({ userAgent }) => {
+const BlogList: NextPage<Props, any> = () => {
+  // const [url, setUrl] = useState("0");
+  // console.log(url);
+  // useEffect(()=>{
+  //   const url = window.location.href;
+  //   const loc = url.substring(url.lastIndexOf('/')+1, url.length);
+  //   console.log(url);
+  //   const newUrl =(window.location.port+"/zh/"+loc);
+  // });
+  
   return (
     <>
-      <main>Your: {userAgent}</main>
+      <main>Path: </main>
+      <Link href={"zh"+location.pathname}>
+      asd</Link>
       <SSection>
-        <App />
         <SDetail>
           <div>welcome to my page !</div>
           <p>Look my daily</p>
