@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@agentofuser/remark-oembed": "^1.0.4",
+    "@types/styled-components": "^5.1.4",
     "gray-matter": "^4.0.2",
     "next": "9.5.5",
     "raw-loader": "^4.0.2",

@@ -12,7 +12,7 @@ export const SSection = styled.section`
 `;
 
 export const SDetail = styled.div`
-  color: gray;
+  color: green;
   width: 100%;
   height: auto;
   margin: 0 auto;
