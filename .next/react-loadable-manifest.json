@@ -1,8 +1,68 @@
 {
-  "./dev/noop": [
+  "./blog/en-US/apisix-vs-api7.md": [
     {
-      "id": "./node_modules/next/dist/client/dev/noop.js",
-      "file": "static/chunks/0.js"
+      "id": "a6w9",
+      "file": "static/chunks/12.5522eb0379b1def017f6.js"
+    }
+  ],
+  "./blog/en-US/business-support.md": [
+    {
+      "id": "on/k",
+      "file": "static/chunks/13.e8c9406f5504e291280c.js"
+    }
+  ],
+  "./blog/en-US/diary.md": [
+    {
+      "id": "G2jT",
+      "file": "static/chunks/14.d33c9ebb16b8655334cb.js"
+    }
+  ],
+  "./blog/en-US/form-api7-trial.md": [
+    {
+      "id": "8Ttg",
+      "file": "static/chunks/15.67e70e3384cbc85f358c.js"
+    }
+  ],
+  "./blog/en-US/learn-web.md": [
+    {
+      "id": "FOqR",
+      "file": "static/chunks/16.b6aa9631e3c42ee7a06f.js"
+    }
+  ],
+  "./blog/zh-CN/apisix-vs-api7.md": [
+    {
+      "id": "SO9H",
+      "file": "static/chunks/17.fec5e127f5347e48b95b.js"
+    }
+  ],
+  "./blog/zh-CN/business-support.md": [
+    {
+      "id": "YMb5",
+      "file": "static/chunks/18.fb467f71c990fd358ccf.js"
+    }
+  ],
+  "./blog/zh-CN/diary.md": [
+    {
+      "id": "d9FO",
+      "file": "static/chunks/19.51f53b1795ba1c53f242.js"
+    }
+  ],
+  "./blog/zh-CN/form-api7-trial.md": [
+    {
+      "id": "kqo0",
+      "file": "static/chunks/20.b5761a4235e19e2c2cac.js"
+    }
+  ],
+  "./blog/zh-CN/learn-web.md": [
+    {
+      "id": "d098",
+      "file": "static/chunks/21.1b9f615b1e3630d904ed.js"
+    }
+  ],
+  "./blog/zh-CN/learn-web2.md": [
+    {
+      "id": "1Mfw",
+      "file": "static/chunks/22.73b0ff637ca29a5f5743.js"
     }
   ]
 }
