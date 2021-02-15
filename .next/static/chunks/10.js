@@ -1,0 +1,15 @@
+(window["webpackJsonp_N_E"] = window["webpackJsonp_N_E"] || []).push([[10],{
+
+/***/ "./_posts/blog/zh-CN/learn-web.md":
+/*!****************************************!*\
+  !*** ./_posts/blog/zh-CN/learn-web.md ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"---\\ntitle: \\\"\\\"\\ndate: 2020-11-11 18:13:00\\n---\\n### 我的今天学习进度\\n1. 今天我把umi插件部分看完了（项目中用到的那些）虽然不能牢记于心，但是能明白各插件的用处，具体如何实现的细节还没有扣。\\n   看的过程真的是一脸茫然的去看，看着后面的翻着前面的，总归记住了一些不错的很有用的知识。记了很多笔记，在这里写几个我总是忘记的记录一下：1.带$（有双竖线）前缀的目录试文件为动态路由，带$（有双竖线）的后缀为可选动态路由。\\n2. 发现各目录下的文件非常工整，几乎都是相同的文件类型，就把typing中的type和interface 查了查，还有declare的作用。\\n3. 查了查，cookie和localStorage的作用。\\n\\n### 总结\\n1. 之前看的一脸茫然，昨天经琚大佬帮助，转到2.0分支看直接看web下的文件就好啦，这下方便多啦！晚上问了孙老板一些问题，经过讲解后发现明白了很多，不像之前那样茫然，看的毫无头绪了！强行续命一波，更加有干劲了！明天继续加油！\\n\\n\\n\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9fTl9FLy4vX3Bvc3RzL2Jsb2cvemgtQ04vbGVhcm4td2ViLm1kPzg1NTIiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFBZSw4aEJBQStkIiwiZmlsZSI6Ii4vX3Bvc3RzL2Jsb2cvemgtQ04vbGVhcm4td2ViLm1kLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGRlZmF1bHQgXCItLS1cXG50aXRsZTogXFxcIlxcXCJcXG5kYXRlOiAyMDIwLTExLTExIDE4OjEzOjAwXFxuLS0tXFxuIyMjIOaIkeeahOS7iuWkqeWtpuS5oOi/m+W6plxcbjEuIOS7iuWkqeaIkeaKinVtaeaPkuS7tumDqOWIhueci+WujOS6hu+8iOmhueebruS4reeUqOWIsOeahOmCo+S6m++8ieiZveeEtuS4jeiDveeJouiusOS6juW/g++8jOS9huaYr+iDveaYjueZveWQhOaPkuS7tueahOeUqOWkhO+8jOWFt+S9k+WmguS9leWunueOsOeahOe7huiKgui/mOayoeacieaJo+OAglxcbiAgIOeci+eahOi/h+eoi+ecn+eahOaYr+S4gOiEuOiMq+eEtueahOWOu+eci++8jOeci+edgOWQjumdoueahOe/u+edgOWJjemdoueahO+8jOaAu+W9kuiusOS9j+S6huS4gOS6m+S4jemUmeeahOW+iOacieeUqOeahOefpeivhuOAguiusOS6huW+iOWkmueslOiusO+8jOWcqOi/memHjOWGmeWHoOS4quaIkeaAu+aYr+W/mOiusOeahOiusOW9leS4gOS4i++8mjEu5bimJO+8iOacieWPjOerlue6v++8ieWJjee8gOeahOebruW9leivleaWh+S7tuS4uuWKqOaAgei3r+eUse+8jOW4piTvvIjmnInlj4znq5bnur/vvInnmoTlkI7nvIDkuLrlj6/pgInliqjmgIHot6/nlLHjgIJcXG4yLiDlj5HnjrDlkITnm67lvZXkuIvnmoTmlofku7bpnZ7luLjlt6XmlbTvvIzlh6DkuY7pg73mmK/nm7jlkIznmoTmlofku7bnsbvlnovvvIzlsLHmiop0eXBpbmfkuK3nmoR0eXBl5ZKMaW50ZXJmYWNlIOafpeS6huafpe+8jOi/mOaciWRlY2xhcmXnmoTkvZznlKjjgIJcXG4zLiDmn6Xkuobmn6XvvIxjb29raWXlkoxsb2NhbFN0b3JhZ2XnmoTkvZznlKjjgIJcXG5cXG4jIyMg5oC757uTXFxuMS4g5LmL5YmN55yL55qE5LiA6IS46Iyr54S277yM5pio5aSp57uP55Ca5aSn5L2s5biu5Yqp77yM6L2s5YiwMi4w5YiG5pSv55yL55u05o6l55yLd2Vi5LiL55qE5paH5Lu25bCx5aW95ZWm77yM6L+Z5LiL5pa55L6/5aSa5ZWm77yB5pma5LiK6Zeu5LqG5a2Z6ICB5p2/5LiA5Lqb6Zeu6aKY77yM57uP6L+H6K6y6Kej5ZCO5Y+R546w5piO55m95LqG5b6I5aSa77yM5LiN5YOP5LmL5YmN6YKj5qC36Iyr54S277yM55yL55qE5q+r5peg5aS057uq5LqG77yB5by66KGM57ut5ZG95LiA5rOi77yM5pu05Yqg5pyJ5bmy5Yqy5LqG77yB5piO5aSp57un57ut5Yqg5rK577yBXFxuXFxuXFxuXCI7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./_posts/blog/zh-CN/learn-web.md\n");
+
+/***/ })
+
+}]);
