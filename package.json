@@ -12,6 +12,7 @@
     "@types/styled-components": "^5.1.4",
     "gray-matter": "^4.0.2",
     "next": "9.5.5",
+    "next-seo": "^4.23.0",
     "raw-loader": "^4.0.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
