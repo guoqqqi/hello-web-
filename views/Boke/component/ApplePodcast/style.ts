@@ -163,7 +163,7 @@ export const SSection4 = styled.div`
   .card {
     padding: 10px 0;
     display: flex;
-    border-bottom: 1px solid #717175;
+    border-bottom: 1px solid #222222;
 
     h2 {
       margin: 0;
@@ -195,5 +195,65 @@ export const SSection4 = styled.div`
       width: auto;
       margin-right: 10px;
     }
+  }
+`
+
+export const SFooter = styled.div`
+  color: #E7E8E8;
+  padding:  15px 20px;
+  margin-top: -75px;
+  width: 414px;
+  display: block;
+  font-size: 20px;
+  background-color: #171617;
+  opacity: 1;
+  position: absolute;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+
+  div {
+    align-items: center;
+    display: flex;
+  }
+
+  span {
+    margin-left: 15px;
+    margin-right: 35px;
+  }
+
+  img {
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+  }
+
+  svg {
+    text-align: right;
+    margin-left: 15px;
+  }
+`
+
+export const SFooterIcon = styled.div`
+  max-width: 414px;
+  min-height: 68px;
+  color: #828282;
+  background-color: #1D1D1D;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  margin-top: -10px;
+  padding-top: 10px;
+  display: flex;
+
+  div {
+    width: 25%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .active {
+    color: #7C48BE;
   }
 `
