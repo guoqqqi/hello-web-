@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from \"./Microcosm\";","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/views/Boke/component/Microcosm/index.ts"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,aAAtB","sourcesContent":["export {default} from \"./Microcosm\"\n"]},"metadata":{},"sourceType":"module"}

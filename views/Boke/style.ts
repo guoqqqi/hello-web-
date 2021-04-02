@@ -4,7 +4,7 @@ export const SSection = styled.section`
   display: flex;
   max-width: 1200px;
   padding: 20px 40px;
-  margin-top: 20px;
+  margin: 20px auto;
   background-color: #fff;
 `;
 

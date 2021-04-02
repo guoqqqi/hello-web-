@@ -4,6 +4,7 @@ import { NextSeo } from "next-seo";
 
 import { SBox, SInner, SSection } from "./style";
 import ApplePodcast from "./component/ApplePodcast";
+import Microcosm from "./component/Microcosm";
 
 type Props = {};
 
@@ -13,7 +14,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
   return (
     <div>
       <NextSeo title="音播" />
-      <div style={{ textAlign: 'center', fontSize: '27px', maxWidth: '1200px' }}>
+      <div style={{ textAlign: 'center', fontSize: '27px', maxWidth: '1200px', margin: '0 auto' }}>
         <p>播客客户端页面模拟</p>
       </div>
       <SSection>
@@ -60,7 +61,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
               <button onClick={() => setValue("小宇宙")}>小宇宙</button>
             </div>
           </div>
-          {value === "苹果播客" ? <ApplePodcast /> : null}
+          {value === "苹果播客" ? <ApplePodcast /> : <Microcosm />}
         </SBox>
       </SSection>
     </div>
