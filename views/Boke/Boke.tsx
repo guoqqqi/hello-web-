@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { NextPage } from "next";
 import { NextSeo } from "next-seo";
+
 import { SBox, SInner, SSection } from "./style";
 import ApplePodcast from "./component/ApplePodcast";
 
 type Props = {};
 
 const Boke: NextPage<Props, any> = ({ }) => {
+  const [value, setValue] = useState("苹果播客");
+
   return (
     <div>
       <NextSeo title="音播" />
@@ -53,11 +56,11 @@ const Boke: NextPage<Props, any> = ({ }) => {
         <SBox>
           <div style={{ padding: '0 30px 10px 30px', textAlign: 'center' }}>
             <div className="chooseBox">
-              <button>苹果播客</button>
-              <button>小宇宙</button>
+              <button onClick={() => setValue("苹果播客")}>苹果播客</button>
+              <button onClick={() => setValue("小宇宙")}>小宇宙</button>
             </div>
           </div>
-          <ApplePodcast />
+          {value === "苹果播客" ? <ApplePodcast /> : null}
         </SBox>
       </SSection>
     </div>
