@@ -2,7 +2,7 @@ import React from "react";
 import { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
-import { STop, STop2 } from "./style";
+import { STop, STop2, SSection, SSection2, SSection3 } from "./style";
 
 type Props = {};
 
@@ -12,11 +12,12 @@ const Microcosm: NextPage<Props, any> = ({ }) => {
       <NextSeo title="小宇宙" />
       <div style={{ width: '414px', height: '841px', backgroundColor: '#FEFFFF', margin: '0 auto', border: '1px solid #E7E8E8' }}>
         <STop>
-          <div style={{ display: 'flex', alignItems: 'center', width: '70%' }}>
+          <div style={{ display: 'flex', alignItems: 'center', width: '40%' }}>
             <p>00:00</p>
             <svg height="14" width="14" fill="##0A0A0A" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px" viewBox="0 0 100 100"><g><path d="M66.5,98c-1.4,0-2.8-0.7-3.5-2L47.7,70.5l-29,6.7c-1.7,0.4-3.5-0.4-4.4-1.9c-0.9-1.5-0.8-3.5,0.4-4.8L71.2,5 c1.2-1.3,3.1-1.8,4.7-1.1c1.6,0.7,2.6,2.4,2.5,4.1l-7.9,86.2c-0.2,1.8-1.4,3.2-3.2,3.6C67.1,98,66.8,98,66.5,98z M49.7,61.8 c1.4,0,2.8,0.7,3.5,2L63.5,81l5.6-61l-40,46.4l19.6-4.5C49,61.8,49.3,61.8,49.7,61.8z"></path></g></svg>
           </div>
-          <div style={{ width: '30%', float: 'right', textAlign: 'right' }}>
+          <div className='logo'><img src="https://static.codefuture.top/brand-xyz/_next/static/images/main-logo-light-aeb4a3e35d57249c7c22943cdb17151c.png" alt="" /></div>
+          <div style={{ width: '40%', float: 'right', textAlign: 'right' }}>
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                 width="16" height="16"
@@ -42,12 +43,41 @@ const Microcosm: NextPage<Props, any> = ({ }) => {
           </div>
           <div className="topRight">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-              width="28" height="28"
+              width="24" height="24"
               viewBox="0 0 172 172"
               fill=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#74c7dc"><path d="M127.13135,21.43001c-2.91501,0.00361 -5.53745,1.7723 -6.63303,4.47359c-1.09558,2.70129 -0.44601,5.79702 1.64296,7.83012l3.91927,3.91927c-41.93611,0.6194 -75.89388,34.93357 -75.89388,77.01367c-0.03655,2.58456 1.32136,4.98858 3.55376,6.29153c2.2324,1.30295 4.99342,1.30295 7.22582,0c2.2324,-1.30295 3.59031,-3.70697 3.55376,-6.29153c0,-34.30129 27.3316,-61.98194 61.46956,-62.64535l-3.82829,3.82829c-1.87223,1.79752 -2.62641,4.46675 -1.97168,6.97825c0.65472,2.5115 2.61605,4.47282 5.12755,5.12755c2.5115,0.65472 5.18073,-0.09946 6.97825,-1.97168l15.48812,-15.48812c1.789,-1.35902 2.83726,-3.47825 2.83176,-5.7249c-0.0055,-2.24665 -1.06412,-4.36073 -2.85975,-5.71097l-15.46013,-15.46013c-1.35097,-1.38873 -3.2066,-2.17137 -5.14404,-2.1696zM44.79167,21.5c-12.77872,0 -23.29167,10.51295 -23.29167,23.29167v82.41667c0,12.77872 10.51295,23.29167 23.29167,23.29167h82.41667c12.77872,0 23.29167,-10.51295 23.29167,-23.29167v-26.875c0.03655,-2.58456 -1.32136,-4.98858 -3.55376,-6.29153c-2.2324,-1.30295 -4.99342,-1.30295 -7.22582,0c-2.2324,1.30295 -3.59031,3.70697 -3.55376,6.29153v26.875c0,5.03045 -3.92789,8.95833 -8.95833,8.95833h-82.41667c-5.03045,0 -8.95833,-3.92789 -8.95833,-8.95833v-82.41667c0,-5.03045 3.92789,-8.95833 8.95833,-8.95833h26.875c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376z"></path></g></g></g></svg>
             <a>···</a>
           </div>
         </STop2>
+        <SSection>
+          <h1>宇宙牌电饭锅</h1>
+          <div className="box">
+            <div className="left">
+              <input type="checkbox" name="toggle" id="toggle" style={{ display: "none" }} />
+              <p>人间铁锅炖，万物一锅出——欢迎来到「宇宙牌电饭锅」。这里是这里是这里是这里是这里是这里是这里是这里是这里是</p>
+              <label htmlFor="toggle"></label>
+            </div>
+            <div className="right">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </SSection>
+        <SSection2>
+          <div>
+            <p>2021</p>
+            <span>已订阅</span>
+          </div>
+          <button>+订阅</button>
+        </SSection2>
+        <SSection3>
+          <div>
+            <button>单集目录</button>
+            <button>节目详情</button>
+          </div>
+          <div>
+            <p>人间铁锅炖，万物一锅出————欢迎来到「宇宙牌电饭锅」。这里是东东枪的私密小电台，目前不定期更新，欢迎赶紧订阅，以免那啥。嗯。：））<br />See acast.com/privacy for privacy and opt-out information.</p>
+          </div>
+        </SSection3>
       </div>
     </div>
   );

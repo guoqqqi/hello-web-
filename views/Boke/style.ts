@@ -29,10 +29,11 @@ export const SBox = styled.div`
       background-color: #FFFFFF;
       border: 1px solid #0076FF;
       border-radius: 2px;
-    }
-    button:focus {
-      color: #FFFFFF;
-      background-color: #0076FF;
+
+      :focus {
+        color: #FFFFFF;
+        background-color: #0076FF;
+      }
     }
   }
 `
