@@ -143,6 +143,8 @@ export const SSection2 = styled.div`
 
 export const SSection3 = styled.div`
   padding: 10px 20px;
+  min-height: 445px;
+  background-image: linear-gradient(#FFFFFF, #F5F5F5);
 
   button {
     width: 65px;
@@ -166,5 +168,49 @@ export const SSection3 = styled.div`
     margin: 10px 0 0;
     color: #3C3B3D;
     line-height: 2;
+  }
+`
+
+export const SFooter = styled.div`
+  padding:  15px 20px;
+  width: 412px;
+  display: block;
+  font-size: 20px;
+  background-color: #FCFEFF;
+  opacity: 1;
+  position: absolute;
+  align-items: center;
+  border-top: 1px solid #F5F5F5;
+
+  div {
+    align-items: center;
+    display: flex;
+  }
+
+  .videoTitle {
+    display: block;
+
+    p {
+      color: #D4D4D5;
+      margin: 5px 35px 0 15px;
+      font-size: 12px;
+    }
+  }
+
+  span {
+    font-size: 14px;
+    margin-left: 15px;
+    margin-right: 35px;
+  }
+
+  img {
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+  }
+
+  svg {
+    text-align: right;
+    margin-left: 15px;
   }
 `
