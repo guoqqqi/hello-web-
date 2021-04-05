@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from './Post';","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/views/Post/index.ts"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,QAAtB","sourcesContent":["export {default} from './Post'"]},"metadata":{},"sourceType":"module"}

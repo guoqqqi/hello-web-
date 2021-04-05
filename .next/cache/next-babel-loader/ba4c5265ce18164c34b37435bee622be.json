@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from \"./Boke\";","map":{"version":3,"sources":["/Users/guoqi/workspace/hello-web-/views/Boke/index.ts"],"names":["default"],"mappings":"AAAA,SAAQA,OAAR,QAAsB,QAAtB","sourcesContent":["export {default} from \"./Boke\"\n"]},"metadata":{},"sourceType":"module"}
