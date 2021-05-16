@@ -30,7 +30,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
       </SSection>
       <SSection>
         <SBox>
-          <form action="">
+          <form action="" method="POST">
             <label htmlFor="">节目名称</label>
             <SInner>
               <input placeholder="请输入节目名称" type="text" />
@@ -42,7 +42,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
             <SInner ><img src="" alt="" /></SInner>
             <label htmlFor="">节目介绍</label>
             <SInner>
-              <textarea name="" id="" cols={50} rows={10} placeholder="请输入节目介绍"></textarea>
+              <textarea name="" id="节目介绍" cols={50} rows={10} placeholder="请输入节目介绍"></textarea>
             </SInner>
             <label htmlFor="">创作者信息</label>
             <SInner>
