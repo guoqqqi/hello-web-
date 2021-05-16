@@ -13,7 +13,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
   const [showData, setShowData] = useState({});
 
   useEffect(() => {
-    const url = location.href;
+    const url = decodeURI(location.href);
     let obj = {};
     if (url.indexOf('?') !== -1) {
       const urlsplit = url.split('?');
@@ -21,9 +21,8 @@ const Boke: NextPage<Props, any> = ({ }) => {
       for (let i = 0; i < par.length; i++) {
         let p = par[i].split('=');
         obj[p[0]] = p[1];
-        console.log(obj);
+        setShowData(obj);
       }
-      setShowData(obj);
     } else false;
   }, []);
 
@@ -53,7 +52,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
             </SInner>
             <label htmlFor="">封面图</label>
             <SInner>
-              <input name="list_URL" placeholder="请输入封面图 URL" type="text" />
+              <input name="list_URL" placeholder="请输入封面图 URL" type="url" />
             </SInner>
             <SInner ><img src="" alt="" /></SInner>
             <label htmlFor="">节目介绍</label>
