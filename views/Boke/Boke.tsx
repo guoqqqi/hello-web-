@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
@@ -10,6 +10,22 @@ type Props = {};
 
 const Boke: NextPage<Props, any> = ({ }) => {
   const [value, setValue] = useState("苹果播客");
+  const [showData, setShowData] = useState({});
+
+  useEffect(() => {
+    const url = location.href;
+    let obj = {};
+    if (url.indexOf('?') !== -1) {
+      const urlsplit = url.split('?');
+      let par = urlsplit[1].split('&');
+      for (let i = 0; i < par.length; i++) {
+        let p = par[i].split('=');
+        obj[p[0]] = p[1];
+        console.log(obj);
+      }
+      setShowData(obj);
+    } else false;
+  }, []);
 
   return (
     <div>
@@ -19,10 +35,10 @@ const Boke: NextPage<Props, any> = ({ }) => {
       </div>
       <SSection>
         <SBox>
-          <form action="">
+          <form id="form" action="" method="get" >
             <label htmlFor="" style={{ fontSize: '18px', paddingBottom: '10px' }}>从 RSS Feed 读取播客节目信息 </label>
             <SInner>
-              <input placeholder="请输入 RSS Feed URL" type="text" name="url" style={{ width: '400px', marginRight: '10px' }} />
+              <input placeholder="请输入 RSS Feed URL" type="text" name="rss_url" style={{ width: '400px', marginRight: '10px' }} />
               <button>提交</button>
             </SInner>
           </form>
@@ -30,28 +46,29 @@ const Boke: NextPage<Props, any> = ({ }) => {
       </SSection>
       <SSection>
         <SBox>
-          <form action="" method="POST">
+          <form id="form2" action="" method="get">
             <label htmlFor="">节目名称</label>
             <SInner>
-              <input placeholder="请输入节目名称" type="text" />
+              <input name="list_name" placeholder="请输入节目名称" type="json" />
             </SInner>
             <label htmlFor="">封面图</label>
             <SInner>
-              <input placeholder="请输入封面图 URL" type="text" />
+              <input name="list_URL" placeholder="请输入封面图 URL" type="text" />
             </SInner>
             <SInner ><img src="" alt="" /></SInner>
             <label htmlFor="">节目介绍</label>
             <SInner>
-              <textarea name="" id="节目介绍" cols={50} rows={10} placeholder="请输入节目介绍"></textarea>
+              <textarea name="list_desc" id="节目介绍" cols={50} rows={10} placeholder="请输入节目介绍"></textarea>
             </SInner>
             <label htmlFor="">创作者信息</label>
             <SInner>
-              <input placeholder="请输入创作者信息" type="text" />
+              <input name="list_info" placeholder="请输入创作者信息" type="text" />
             </SInner>
             <label htmlFor="">播客分类</label>
             <SInner>
-              <input placeholder="请输入播客分类" type="text" name="" id="" />
+              <input name="list_type" placeholder="请输入播客分类" type="text" />
             </SInner>
+            <input type="submit" />
           </form>
         </SBox>
         <SBox>
@@ -61,7 +78,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
               <button onClick={() => setValue("小宇宙")}>小宇宙</button>
             </div>
           </div>
-          {value === "苹果播客" ? <ApplePodcast /> : <Microcosm />}
+          {value === "苹果播客" ? <ApplePodcast list={showData} /> : <Microcosm list={showData} />}
         </SBox>
       </SSection>
     </div>

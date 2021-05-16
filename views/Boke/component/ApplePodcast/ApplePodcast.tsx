@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
 import { STop, SSection, SSection2, SSection3, SSection4, SFooter, SFooterIcon } from "./style"
 
-type Props = {};
+type Props = {
+  list?: data
+};
 
-const ApplePodcast: NextPage<Props, any> = ({ }) => {
+type data = {
+  list_name?: string;
+  list_URL?: string;
+  list_desc?: string;
+  list_info?: string;
+  list_type?: string;
+}
+
+const ApplePodcast: NextPage<Props, any> = ({ list }) => {
   return (
     <div>
       <NextSeo title="苹果播客" />
@@ -41,10 +51,10 @@ const ApplePodcast: NextPage<Props, any> = ({ }) => {
           <p>Search</p>
         </SSection>
         <SSection>
-          <div className="left"><img src="" alt="" /></div>
+          <div className="left"><img src={`${list.list_URL}`} alt="" /></div>
           <div className="right">
-            <h1>世界莫名其妙物语</h1>
-            <p>世界莫名其妙物语</p>
+            <h1>{list.list_name ? list.list_name : "世界莫名其妙物语"}</h1>
+            <p>{list.list_info ? list.list_info : "世界莫名其妙物语"}</p>
             <div>
               <button className="button1">SUBSCRIBE</button>
               <button className='button2'>···</button>
@@ -58,12 +68,12 @@ const ApplePodcast: NextPage<Props, any> = ({ }) => {
           </div>
           <div>
             <p>2020-2021</p>
-            <span>Comedy Interviews</span>
+            <span>{list.list_type ? list.list_type : "Comedy Interviews"}</span>
           </div>
         </SSection2>
         <SSection3>
           <input type="checkbox" name="toggle" id="toggle" style={{ display: "none" }} />
-          <p>干货和笑点不能两全？这么想可就大错特错了！三名美少女段子手组成了相声天团，每周一每周一每周一每周一每周一每周一每周一每周一每周一每周一每周一每周一</p>
+          <p>{list.list_desc ? list.list_desc : "干货和笑点不能两全？这么想可就大错特错了！三名美少女段子手组成了相声天团，每周一每周一每周一每周一每周一每周一每周一每周一每周一每周一每周一每周一"}</p>
           <label htmlFor="toggle"></label>
         </SSection3>
         <SSection4>

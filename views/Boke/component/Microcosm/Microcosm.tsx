@@ -4,9 +4,11 @@ import { NextSeo } from "next-seo";
 
 import { STop, STop2, SSection, SSection2, SSection3, SFooter } from "./style";
 
-type Props = {};
+type Props = {
+  list?: {}
+};
 
-const Microcosm: NextPage<Props, any> = ({ }) => {
+const Microcosm: NextPage<Props, any> = ({ list }) => {
   return (
     <div>
       <NextSeo title="小宇宙" />
