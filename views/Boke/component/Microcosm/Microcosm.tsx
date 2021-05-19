@@ -5,8 +5,16 @@ import { NextSeo } from "next-seo";
 import { STop, STop2, SSection, SSection2, SSection3, SFooter } from "./style";
 
 type Props = {
-  list?: {}
+  list?: data
 };
+
+type data = {
+  list_name?: string;
+  list_URL?: string;
+  list_desc?: string;
+  list_info?: string;
+  list_type?: string;
+}
 
 const Microcosm: NextPage<Props, any> = ({ list }) => {
   return (
@@ -52,15 +60,15 @@ const Microcosm: NextPage<Props, any> = ({ list }) => {
           </div>
         </STop2>
         <SSection>
-          <h1>宇宙牌电饭锅</h1>
+          <h1>{list.list_name ? list.list_name : "宇宙牌电饭锅"}</h1>
           <div className="box">
             <div className="left">
               <input type="checkbox" name="toggle" id="toggle" style={{ display: "none" }} />
-              <p>人间铁锅炖，万物一锅出——欢迎来到「宇宙牌电饭锅」。这里是这里是这里是这里是这里是这里是这里是这里是这里是</p>
+              <p>{list.list_desc ? list.list_desc : "人间铁锅炖，万物一锅出——欢迎来到「宇宙牌电饭锅」。这里是这里是这里是这里是这里是这里是这里是这里是这里是"}</p>
               <label htmlFor="toggle"></label>
             </div>
             <div className="right">
-              <img src="" alt="" />
+              <img src={`${list.list_URL}`} alt="" />
             </div>
           </div>
         </SSection>
@@ -77,7 +85,7 @@ const Microcosm: NextPage<Props, any> = ({ list }) => {
             <button>节目详情</button>
           </div>
           <div>
-            <p>人间铁锅炖，万物一锅出———欢迎来到「宇宙牌电饭锅」。这里是东东枪的私密小电台，目前不定期更新，欢迎赶紧订阅，以免那啥。嗯。：））<br />See acast.com/privacy for privacy and opt-out information.</p>
+            <p>{list.list_desc ? list.list_desc : <p>人间铁锅炖，万物一锅出———欢迎来到「宇宙牌电饭锅」。这里是东东枪的私密小电台，目前不定期更新，欢迎赶紧订阅，以免那啥。嗯。：））<br />See acast.com/privacy for privacy and opt-out information.</p>}</p>
           </div>
         </SSection3>
         <SFooter>

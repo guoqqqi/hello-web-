@@ -13,13 +13,15 @@ const Boke: NextPage<Props, any> = ({ }) => {
   const [showData, setShowData] = useState({});
 
   useEffect(() => {
-    const url = decodeURI(location.href);
+    const url = decodeURIComponent(location.href);
+    console.log(url);
     let obj = {};
     if (url.indexOf('?') !== -1) {
       const urlsplit = url.split('?');
       let par = urlsplit[1].split('&');
       for (let i = 0; i < par.length; i++) {
         let p = par[i].split('=');
+        console.log(p[1]);
         obj[p[0]] = p[1];
         setShowData(obj);
       }
@@ -34,7 +36,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
       </div>
       <SSection>
         <SBox>
-          <form id="form" action="" method="get" >
+          <form id="form" action="" method="" >
             <label htmlFor="" style={{ fontSize: '18px', paddingBottom: '10px' }}>从 RSS Feed 读取播客节目信息 </label>
             <SInner>
               <input placeholder="请输入 RSS Feed URL" type="text" name="rss_url" style={{ width: '400px', marginRight: '10px' }} />
@@ -45,25 +47,25 @@ const Boke: NextPage<Props, any> = ({ }) => {
       </SSection>
       <SSection>
         <SBox>
-          <form id="form2" action="" method="get">
-            <label htmlFor="">节目名称</label>
+          <form id="form2" name="form2" action="" method="get">
+            <label htmlFor="form2">节目名称</label>
             <SInner>
               <input name="list_name" placeholder="请输入节目名称" type="json" />
             </SInner>
-            <label htmlFor="">封面图</label>
+            <label htmlFor="form2">封面图</label>
             <SInner>
-              <input name="list_URL" placeholder="请输入封面图 URL" type="url" />
+              <input name="list_URL" placeholder="请输入封面图 URL" />
             </SInner>
             <SInner ><img src="" alt="" /></SInner>
-            <label htmlFor="">节目介绍</label>
+            <label htmlFor="form2">节目介绍</label>
             <SInner>
               <textarea name="list_desc" id="节目介绍" cols={50} rows={10} placeholder="请输入节目介绍"></textarea>
             </SInner>
-            <label htmlFor="">创作者信息</label>
+            <label htmlFor="form2">创作者信息</label>
             <SInner>
               <input name="list_info" placeholder="请输入创作者信息" type="text" />
             </SInner>
-            <label htmlFor="">播客分类</label>
+            <label htmlFor="form2">播客分类</label>
             <SInner>
               <input name="list_type" placeholder="请输入播客分类" type="text" />
             </SInner>

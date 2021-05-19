@@ -39,6 +39,7 @@ export const SSection = styled.div`
   .left {
     width: 35%;
     img {
+      width: 130px;
       min-width: 100%;
       min-height: 140px;
       border: 1px solid #FFFFFF;
@@ -113,6 +114,7 @@ export const SSection3 = styled.div`
   margin-bottom: 20px;
   display: block;
   font-size: 16px;
+  height: 85px;
 
   p {
     display: -webkit-box;
