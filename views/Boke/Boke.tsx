@@ -65,10 +65,11 @@ const Boke: NextPage<Props, any> = ({ }) => {
           <form id="form" action="" method="get" >
             <label htmlFor="" style={{ fontSize: '18px', paddingBottom: '10px' }}>从 RSS Feed 读取播客节目信息 </label>
             <SInner>
-              <input placeholder="请输入 RSS Feed URL" type="text" name="rss_url" style={{ width: '400px', marginRight: '10px' }} />
+              <input placeholder="请输入 RSS Feed URL" type='url' name="rss_url" style={{ width: '400px', marginRight: '10px' }} />
               <button>提交</button>
             </SInner>
           </form>
+          <a href="/boke">重置页面</a>
         </SBox>
       </SSection>
       <SSection>
@@ -76,7 +77,7 @@ const Boke: NextPage<Props, any> = ({ }) => {
           <form id="form2" name="form2" action="" method="get">
             <label htmlFor="form2">节目名称</label>
             <SInner>
-              <input name="list_name" placeholder="请输入节目名称" type="json" />
+              <input name="list_name" placeholder="请输入节目名称" />
             </SInner>
             <label htmlFor="form2">封面图</label>
             <SInner>
