@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
-import { STop, SSection, SSection2, SSection3, SSection4, SFooter, SFooterIcon } from "./style"
+import { SContainer, STop, SSection, SSection2, SSection3, SSection4, SFooter, SFooterIcon } from "./style"
 
 type Props = {
   list?: data
@@ -20,7 +20,7 @@ const ApplePodcast: NextPage<Props, any> = ({ list }) => {
   return (
     <div>
       <NextSeo title="苹果播客" />
-      <div style={{ width: '414px', height: '841px', backgroundColor: 'black', margin: '0 auto' }}>
+      <SContainer>
         <STop>
           <div style={{ display: 'flex', alignItems: 'center', width: '70%' }}>
             <p>00:00</p>
@@ -157,7 +157,7 @@ const ApplePodcast: NextPage<Props, any> = ({ list }) => {
             <p className="active">Search</p>
           </div>
         </SFooterIcon>
-      </div>
+      </SContainer>
     </div>
   );
 };

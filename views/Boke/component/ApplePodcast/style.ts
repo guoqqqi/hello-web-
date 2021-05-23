@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const SContainer = styled.div`
+  width: 414px;
+  background-color: black;
+  margin: 0 auto;
+`
+
 export const STop = styled.div`
   color: #FFFFFF;
   padding: 20px;
