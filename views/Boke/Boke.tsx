@@ -5,7 +5,6 @@ import { NextSeo } from "next-seo";
 import { SBox, SInner, SSection } from "./style";
 import ApplePodcast from "./component/ApplePodcast";
 import Microcosm from "./component/Microcosm";
-import { getJSON } from "jquery";
 
 type Props = {};
 
@@ -61,11 +60,11 @@ const Boke: NextPage<Props, any> = ({ }) => {
         <p>播客客户端页面模拟</p>
       </div>
       <SSection>
-        <SBox>
+        <SBox style={{ width: '100%' }}>
           <form id="form" action="" method="get" >
             <label htmlFor="" style={{ fontSize: '18px', paddingBottom: '10px' }}>从 RSS Feed 读取播客节目信息 </label>
             <SInner>
-              <input placeholder="请输入 RSS Feed URL" type='url' name="rss_url" style={{ width: '400px', marginRight: '10px' }} />
+              <input placeholder="请输入 RSS Feed URL" type='url' name="rss_url" style={{ marginRight: '10px' }} />
               <button>提交</button>
             </SInner>
           </form>

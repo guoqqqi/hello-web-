@@ -6,6 +6,11 @@ export const SSection = styled.section`
   padding: 20px 40px;
   margin: 20px auto;
   background-color: #fff;
+
+  @media (max-width: 900px) {
+    display: block;
+    margin: 0 auto;
+  }
 `;
 
 export const SBox = styled.div`
@@ -13,7 +18,7 @@ export const SBox = styled.div`
   display: block;
 
   input {
-    width: 400px;
+    width: 100%;
     height: 40px;
     margin: 10px 0 20px 0;
     border: 1px solid #AAAAAA;
@@ -36,6 +41,15 @@ export const SBox = styled.div`
       }
     }
   }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    overflow: scroll;
+
+    input {
+      width: 80%;
+    }
+  }
 `
 
 export const SInner = styled.div`
@@ -51,7 +65,7 @@ export const SInner = styled.div`
   }
 
   textarea {
-    width: 400px;
+    width: 100%;
     height: 200px;
     margin-bottom: 20px;
   }

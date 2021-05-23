@@ -215,7 +215,7 @@ export const SFooter = styled.div`
   font-size: 20px;
   background-color: #171617;
   opacity: 1;
-  position: absolute;
+  transform-style: preserve-3d;
   align-items: center;
   border-bottom: 1px solid #222222;
 
