@@ -5,6 +5,7 @@ import { NextSeo } from "next-seo";
 import { SBox, SInner, SSection } from "./style";
 import ApplePodcast from "./component/ApplePodcast";
 import Microcosm from "./component/Microcosm";
+import { getJSON } from "jquery";
 
 type Props = {};
 
@@ -16,23 +17,41 @@ const Boke: NextPage<Props, any> = ({ }) => {
   useEffect(() => {
     const url = decodeURIComponent(location.href);
     let obj = {};
-    if (url.indexOf('rss_url') === -1) {
+    if (url.indexOf('rss_url') === -1 && url.indexOf('list_name') !== -1) {
       const urlsplit = url.split('?');
       let par = urlsplit[1].split('&');
       for (let i = 0; i < par.length; i++) {
         let p = par[i].split('=');
         obj[p[0]] = p[1];
         setShowData(obj);
+        console.log(obj);
       }
     } else {
       const urlsplit = url.split('?');
-      let par = urlsplit[1].split('&');
-      let p = par[0].split('=');
-      setFetchUrl(p[1]);
-      console.log(p[1]);
-    };
+      if (urlsplit[1] !== undefined) {
+        let par = urlsplit[1].split('&');
+        let p = par[0].split('=');
+        setFetchUrl(p[1]);
+        console.log(p[1]);
 
-    // fetch fetchUrl
+        fetch(p[1]).then((res) => {
+          res.text().then((rssXml) => {
+            var domParser = new DOMParser();
+            let doc = domParser.parseFromString(rssXml, 'text/html');
+            console.log(doc, 'doc');
+            var feedUrl = doc.querySelector('[type="application/rss+xml"]');
+            console.log(feedUrl);
+            return setShowData({
+              list_name: feedUrl.querySelector('title').innerText || feedUrl.getElementsByTagName('itunes:title')[0].innerHTML,
+              list_desc: feedUrl.getElementsByTagName('description')[0].innerHTML || feedUrl.getElementsByTagName('content:encoded')[0].innerHTML,
+              list_URL: feedUrl.getElementsByTagName('itunes:image')[0].outerHTML.match(/<itunes:image href="(\S*)"/)[1],
+              list_info: feedUrl.getElementsByTagName('itunes:author')[0].innerHTML,
+              list_type: feedUrl.getElementsByTagName('itunes:category')[0].lastElementChild.innerHTML.match(/<itunes:category text="(\S*)"/)[1],
+            });
+          })
+        }).catch(() => alert("RSS Feed 解析失败，请重新提交"));
+      }
+    };
   }, []);
 
   return (
