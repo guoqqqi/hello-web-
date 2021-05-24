@@ -38,14 +38,14 @@ const Boke: NextPage<Props, any> = ({ }) => {
             var domParser = new DOMParser();
             let doc = domParser.parseFromString(rssXml, 'text/html');
             console.log(doc, 'doc');
-            var feedUrl = doc.querySelector('[type="application/rss+xml"]');
-            console.log(feedUrl);
+            // var feedUrl = doc.querySelector('[type="application/rss+xml"]');
+
             return setShowData({
-              list_name: feedUrl.querySelector('title').innerText || feedUrl.getElementsByTagName('itunes:title')[0].innerHTML,
-              list_desc: feedUrl.getElementsByTagName('description')[0].innerHTML || feedUrl.getElementsByTagName('content:encoded')[0].innerHTML,
-              list_URL: feedUrl.getElementsByTagName('itunes:image')[0].outerHTML.match(/<itunes:image href="(\S*)"/)[1],
-              list_info: feedUrl.getElementsByTagName('itunes:author')[0].innerHTML,
-              list_type: feedUrl.getElementsByTagName('itunes:category')[0].lastElementChild.innerHTML.match(/<itunes:category text="(\S*)"/)[1],
+              list_name: doc.querySelector('title').innerText || doc.getElementsByTagName('itunes:title')[0].innerHTML,
+              list_desc: doc.getElementsByTagName('description')[0].innerHTML || doc.getElementsByTagName('content:encoded')[0].innerHTML,
+              list_URL: doc.getElementsByTagName('itunes:image')[0].outerHTML.match(/<itunes:image href="(\S*)"/)[1],
+              list_info: doc.getElementsByTagName('itunes:author')[0].innerHTML,
+              list_type: doc.getElementsByTagName('itunes:category')[0].lastElementChild.innerHTML.match(/<itunes:category text="(\S*)"/)[1],
             });
           })
         }).catch(() => alert("RSS Feed 解析失败，请重新提交"));
