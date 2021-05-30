@@ -1,0 +1,108 @@
+.bg_mask {
+  flex: 1;
+  background: #fff url('/bg@2x.png') no-repeat center / 100% 100%;
+  box-shadow: 0 0 15px #1b28e11a;
+}
+
+.main {
+  background-color: #fff;
+  box-shadow: 0 3px 10px rgba(42, 19, 45, 0.1);
+  .content {
+    padding: 80px 75px 0;
+    div[class~='ant-descriptions'] {
+      tr[class~='ant-descriptions-row']:nth-of-type(1) {
+        td[class~='ant-descriptions-item'] {
+          padding-top: 5px;
+        }
+      }
+      td[class~='ant-descriptions-item'],
+      th[class~='ant-descriptions-item'] {
+        padding-top: 0;
+        padding-bottom: 80px;
+        div[class~='ant-descriptions-item-container'] {
+          color: #222;
+          font-size: 18px;
+          line-height: 1;
+        }
+        // div[class~='ant-descriptions-item-container'],
+        div[class~='cutom-descriptions-label'] {
+          position: relative;
+          padding-left: 49px;
+          .icon {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+          }
+        }
+        // span[class~='ant-descriptions-item-label'] {
+        //   display: flex;
+        //   align-items: center;
+        // }
+        span[class~='ant-descriptions-item-content'],
+        span[class~='ant-descriptions-item-label'] {
+          color: #222;
+          font-size: 18px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+
+.icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  &[class~='classify'] {
+    background-image: url('/classify@2x.png');
+  }
+  &[class~='money'] {
+    background-image: url('/money@2x.png');
+  }
+  &[class~='list'] {
+    background-image: url('/list@2x.png');
+  }
+  &[class~='remark'] {
+    background-image: url('/remark@2x.png');
+  }
+  &[class~='account'] {
+    background-image: url('/account@2x.png');
+  }
+  &[class~='time'] {
+    background-image: url('/time@2x.png');
+  }
+  &[class~='userCard'] {
+    background-image: url('/userCard@2x.png');
+  }
+  &[class~='user'] {
+    background-image: url('/user@2x.png');
+  }
+  &[class~='phone'] {
+    background-image: url('/phone@2x.png');
+  }
+  &[class~='list2'] {
+    background-image: url('/list2@2x.png');
+  }
+  &[class~='swipingCard'] {
+    background-image: url('/swipingCard@2x.png');
+  }
+  &[class~='percent'] {
+    background-image: url('/percent@2x.png');
+  }
+}
+
+.feeTip {
+  font-size: 16px;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 36px;
+  color: rgba(102, 102, 102, 1);
+  letter-spacing: 1px;
+  opacity: 1;
+}
